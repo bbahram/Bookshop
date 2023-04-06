@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head >
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ثبت نام</title>
+    <link rel="icon" type="image/svg" href="../images/books.svg" />
+    <link rel="stylesheet" type="text/css" href="stylesheetRegister.css">
+    <link rel="stylesheet" type="text/css" href="dropDown.css">
+    <script src="form.js"></script>
+    <script src="time.js"></script>
+    <script src="dropDown.js"></script>
+    <style>
+        html{
+            scroll-behavior: smooth;
+        }
+        body{
+            background-color:#D8F0E9 ;
+            font-family: "dubai";
+        }   
+        p{
+            font-size: larger;
+        }
+    </style>
+</head>
+<body onload="startTime()">
+    <div id="top"></div>
+    <div id="timeText"></div>
+
+    <div id="navBar">
+        <ul class="navBarUl">
+            <li><a class="navBarLink" href="../index.html">توضیحات</a></li>
+            <li><a class="navBarLink" href="Products.html">محصولات</a></li>
+            <li><a class="active navBarLink" href="Register.html">ثبت نام</a></li>
+            <li><a class="navBarLink" href="Login.html">ورود</a></li>
+            <li style="float:left"><a class="navBarLink" href="docs/quiz/quiz.html">آزمون</a></li>
+            <li style="float:left" class="dropdown">
+                <a href="javascript:void(0)" class="dropbtn">منوی تم ها</a>
+                <div class="dropdown-content">
+                    <a  onclick="Theme(1)">پیش فرض</a>
+                    <a  onclick="Theme(2)">تیره</a>
+                    <a  onclick="Theme(3)">صورتی</a>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+
+    <div id="form">
+        <form action="#form">
+
+        <label for="fname" style="padding-left: 10%;">(به انگلیسی وارد کنید) نام</label><br>
+        <input type="text" id="fname" name="fname" style="text-align: right;" placeholder="نام" required><br>
+
+        <label for="lname" style="padding-left: 6%;">(به انگلیسی وارد کنید) نام خانوادگی</label><br>
+        <input type="text" id="lname" name="lname" style="text-align: right;" placeholder="نام خانوادگی" required><br>
+
+        <label for="username">نام کاربری</label><br>
+        <input type="text" id="username" name="username" style="text-align: right;" placeholder="نام کاربری" required><br>
+
+        <label for="password">رمز عبور</label><br>
+        <input type="password" id="password" name="password" style="text-align: right;" placeholder="رمز عبور" required><br>
+        <label for="re-password" style="padding-left: 13.5%;">تکرار رمز عبور</label><br>
+        <input type="password" id="re-password" name="re-password" style="text-align: right;" placeholder="تکرار رمز عبور" required><br>
+
+        <label for="email" style="padding-left: 16%;">ایمیل</label><br>
+        <input type="email" id="email" name="email" style="text-align: right;" placeholder="ایمیل" required><br>
+
+        <label for="pnum">شماره تلفن</label><br>
+        <input type="text" id="pnum" name="pnum" style="text-align: right;" placeholder="شماره تلفن" ><br><br>
+        
+
+        <input type="submit" value="پاک کردن" onclick="Reset()">
+        <input type="submit" value="ثبت نام" onclick="Validation()">
+        </form>
+    </div>
+
+
+
+    <div id="bottom"></div>
+</body>
+</html>

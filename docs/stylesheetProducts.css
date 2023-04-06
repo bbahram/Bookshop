@@ -1,0 +1,121 @@
+
+.navBarUl {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+li:not(.demo) {
+    float: right;
+}
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+li a:hover:not(.active) {
+    background-color: rgb(94, 51, 51);
+}
+.active {
+    background-color: #576a92;
+}   
+#navBar{
+    position: sticky;
+    top: 0;
+}
+
+#main{
+    float: right;
+}
+
+
+.grid-item{
+    text-align: center;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 10px;
+    text-align: right;
+    list-style-position: inside;
+}
+
+.grid-item{
+    text-align: center;
+}
+#image1{
+    height: 50%;
+    width: 70%;
+}
+#image2{
+    height: 40%;
+    width: 40%;
+}
+#image3{
+    height:40%;
+    width: 40%;
+}
+#image4{
+    height: 50%;
+    width: 30%;
+}
+#image5{
+    height: 40%;
+    width: 40%;
+}
+#image6{
+    height: 65%;
+    width: 30%;
+}
+
+ul.demo {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.demo{
+    margin-right: 5%;
+}
+
+
+input[type=button] {
+    width: 60%;
+    background-color: #4c93af;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=button]:hover {
+    background-color:#42839c;
+}
+
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 40%;
+    background-color: #accbd8;
+    display: block;
+    margin-top: 5%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgb(156, 150, 207);
+}
+
+
+#timeText{
+    font-size: 1.2em;
+    position: fixed;
+    bottom: 0;
+}

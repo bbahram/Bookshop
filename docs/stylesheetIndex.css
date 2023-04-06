@@ -1,0 +1,86 @@
+
+.navBarUl {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(46, 65, 77);
+}
+li:not(.demo) {
+    float: right;
+}
+
+
+li a:not(.dropDown), select, option{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+li a:hover:not(.active, .dropDown) {
+    background-color: rgb(94, 51, 51);
+}
+.active {
+    background-color: #576a92;
+}   
+#navBar{
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+#main{
+    float: right;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 10px;
+}
+
+.grid-item{
+    text-align: right;
+}
+
+ul.demo {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+#customers {
+    direction:rtl; 
+    float:right;
+    border-collapse: collapse;
+    width: 90%;
+}
+
+#customers td, #customers th {
+    text-align: center;
+    border: 1px solid rgb(221, 221, 221);
+    padding: 8px;
+}
+
+#customers tr:nth-child(even){background-color: #f2f2f2;}
+
+#customers tr:hover {background-color: rgb(176, 224, 238);}
+
+#customers th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #4c93af;
+    color: white;
+}
+
+#timeText{
+    font-size: 1.2em;
+    position: fixed;
+    left: 0.5%;
+    bottom: 0.1%;
+}
+

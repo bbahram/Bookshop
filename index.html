@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head >
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>توضیحات</title>
+    <link rel="icon" type="image/svg" href="images/books.svg" />
+    <link rel="stylesheet" type="text/css" href="docs/stylesheetIndex.css">
+    <link rel="stylesheet" type="text/css" href="docs/slideShow.css">
+    <link rel="stylesheet" type="text/css" href="docs/dropDown.css">
+    <script src="docs/time.js"></script>
+    <script src="docs/slideShow.js"></script>
+    <script src="docs/dropDown.js"></script>
+    <style>
+        html{
+            scroll-behavior: smooth;
+        }
+        body{
+            background-color:#D8F0E9 ;
+            font-family: "dubai";
+        }   
+        p{
+            font-size: larger;
+        }
+    </style>
+</head>
+<body onload="startTime()">
+    <div id="top" onload="OnAwake()"></div>
+    <div id="timeText"></div>
+
+    <h1 style="text-align: center; font-size: 50px; color: rgb(24, 70, 156);">Welcome To BlueReader</h1>
+
+    <div id="navBar">
+        <ul class="navBarUl">
+            <li><a class="active navBarLink" href="index.html">توضیحات</a></li>
+            <li><a class="navBarLink" href="docs/Products.html">محصولات</a></li>
+            <li><a class="navBarLink" href="docs/Register.html">ثبت نام</a></li>
+            <li><a class="navBarLink" href="docs/Login.html">ورود</a></li>
+            <li style="float:left"><a class="navBarLink" href="#top">پرش به بالا</a></li>
+            <li style="float:left"><a class="navBarLink" href="#bottom">پرش به پایین</a></li>
+            <li style="float:left"><a class="navBarLink" href="docs/quiz/quiz.html">آزمون</a></li>
+            <li style="float:left" class="dropdown">
+                <a href="javascript:void(0)" class="dropbtn">منوی تم ها</a>
+                <div class="dropdown-content">
+                    <a  onclick="Theme(1)">پیش فرض</a>
+                    <a  onclick="Theme(2)">تیره</a>
+                    <a  onclick="Theme(3)">صورتی</a>
+                </div>
+            </li>
+        </ul>
+    </div>
+    
+
+    <div class="slideshow-container" id="slideShow">
+
+        <div class="mySlides fade">
+            <div class="numbertext">1 / 6</div>
+            <img src="images/books/sad.jpg" style="display: block; width:25%; margin-left: auto; margin-right: auto;">
+        </div>
+        
+        <div class="mySlides fade">
+            <div class="numbertext">2 / 6</div>
+            <img src="images/books/shazde.png" style="display: block; width:25%; margin-left: auto; margin-right: auto;">
+        </div>
+        
+        <div class="mySlides fade">
+            <div class="numbertext">3 / 6</div>
+            <img src="images/books/kite.jpg" style="display: block; width:25%; margin-left: auto; margin-right: auto;">
+        </div>
+        
+        <div class="mySlides fade">
+            <div class="numbertext">4 / 6</div>
+            <img src="images/books/sun.jpg" style="display: block; width:25%; margin-left: auto; margin-right: auto;">
+        </div>
+        
+        <div class="mySlides fade">
+            <div class="numbertext">5 / 6</div>
+            <img src="images/books/zorba.png" style="display: block; width:25%; margin-left: auto; margin-right: auto;">
+        </div>
+        
+        <div class="mySlides fade">
+            <div class="numbertext">6 / 6</div>
+            <img src="images/books/love.jpg" style="display: block; width:25%; margin-left: auto; margin-right: auto;">
+        </div>
+        
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        
+        </div>
+        <br>
+        
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span> 
+            <span class="dot" onclick="currentSlide(2)"></span> 
+            <span class="dot" onclick="currentSlide(3)"></span> 
+            <span class="dot" onclick="currentSlide(4)"></span> 
+            <span class="dot" onclick="currentSlide(5)"></span> 
+            <span class="dot" onclick="currentSlide(6)"></span> 
+        </div>
+
+
+
+
+
+
+    <div class="grid-container" >
+        <div class="grid-item" id="item1">
+            <h1>توضیح محصولات</h1>
+            <p>کتاب</p>
+        </div>
+        <div class="grid-item" id="item2">
+            <h1>توضیح وبسایت</h1>
+            <p>وبسایتی برای فروش کتاب</p>
+        </div>
+        <div class="grid-item" id="item3">
+            <h1>تماس با ما</h1>
+            <ul class="demo">
+                <li class="demo">64615334 :کد پستی</li>
+                <li class="demo">publicrel@jsu.ac.ir :پست الکترونیکی</li>
+                <li class="demo">06142428000 :شماره تماس</li>
+                <li class="demo">powered by: me and only me</li>
+            </ul>
+        </div>  
+        <div class="grid-item" id="item4">
+            <h1>لیست محصولات</h1>
+            <table id="customers">
+                <tr>
+                    <th style="text-align: center;">نام</th>
+                    <th style="text-align: center;">نویسنده</th>
+                    <th style="text-align: center;">ژانر</th>
+                </tr>
+                <tr>
+                    <td>صد سال تنهایی</td>
+                    <td>گابریل گارسیا مارکز</td>
+                    <td>رمان، رئالیسم جادویی</td>
+                </tr>
+                <tr>
+                    <td>شازده کوچولو</td>
+                    <td>آنتوان دوسنت اگزوپری</td>
+                    <td>ادبیات کودکانه، افسانه</td>
+                </tr>
+                <tr>
+                    <td>بادبادک باز</td>
+                    <td>خالد حسینی</td>
+                    <td>رمان، درام، تاریخی</td>
+                </tr>
+                <tr>
+                    <td>هزاران خورشید تابان</td>
+                    <td>خالد حسینی</td>
+                    <td>رمان، درام، تاریخی</td>
+                </tr>
+                <tr>
+                    <td>زوربای یونانی</td>
+                    <td>نیکوس کازانتزاکیس</td>
+                    <td>رمان</td> 
+                </tr>
+                <tr>
+                    <td>ملت عشق</td>
+                    <td>الیف شافاک</td>
+                    <td>رمان، داستان ادبی</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+
+
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+
+    <div id="bottom"></div>
+</body>
+</html>
